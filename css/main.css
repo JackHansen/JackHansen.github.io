@@ -104,7 +104,7 @@ img {
     width: 100%;
 }
 
-section {
+.top {
     display: inline-block;
     width: 100%;
     height: 100px;
@@ -282,7 +282,7 @@ h5 {
 
 .buttons {
     width: 30%;
-    margin: 0px 20% 0px 20%;
+    margin: 0px 15% 250px 15%;
 }
 
 .espn {
@@ -337,6 +337,100 @@ h4 {
 .bleacher a {
     text-decoration: none;
     color: blue;
+}
+
+.vid {
+    display: inline-block;
+    float: right;
+    margin: -280px 50px 0px 0px;
+}
+
+h6 {
+    text-align: center;
+    font-size: 45px;
+    margin-top: 25px;
+    margin-bottom: -5px;
+}
+
+.rb {
+    float: left;
+    width: 25%;
+    text-align: left;
+    margin-left: 250px;
+}
+
+.lists {
+    margin-top: -15px;
+    height: 350px;
+}
+
+.running {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.qb {
+    float: left;
+    width: 25%;
+    text-align: left;
+}
+
+.throwing {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.wr {
+    float: left;
+    width: 25%;
+    text-align: left;
+    margin-bottom: 75px;
+}
+
+.catching {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.foot {
+    border-radius: 0px;
+    font-family: Arial;
+    color: blue;
+    border: 3px solid black;
+    font-size: 81px;
+    padding: 25px 25px 150px 25px;
+    text-decoration: none;
+    background-color: gray;
+}
+
+.footer {
+    width: 100%;
+    height: 250px;
+}
+
+.bottom {
+    width: 50%;
+}
+
+.draft {
+    width: 100%;
+}
+
+.kings {
+    border-radius: 0px;
+    font-family: Arial;
+    color: blue;
+    border: 3px solid black;
+    font-size: 81px;
+    padding: 25px 25px 150px 25px;
+    text-decoration: none;
+    background-color: gray;
+    float: right;
+    width: 50%;
+    margin-top: -130px;
+    padding: 0px 3px 0px 0px;
+    height: 265px;
+    text-align: center;
 }
 
 /* ==========================================================================
