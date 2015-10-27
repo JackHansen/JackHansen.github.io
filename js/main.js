@@ -23,8 +23,8 @@ $(window).on('scroll', (function(){
         var videoCenter = $('.box2').offset().top - 300;
           // When the distance from the top of the page to where the user has scrolled is >= the distance from the stickyNavTop
         if(playVideo && (scrollTop >= videoCenter)) {
-          // rather than just alert simulate a click event on the ifram to trigger the video! \o/
-          alert("it works");
+          // rather than just alert simulate a click event on the iframe to trigger the video! \o/
+          $('iframe').on('mouseover', playVideo);
           playVideo = false;
         }
       })()
@@ -43,10 +43,11 @@ $(window).on('scroll', (function(){
 
 // When scrolling to class .box2
   // Continuously run video iframe
+var stickyNavTop = $('.header').offset().top;
 
 function manageStickyNav(scrollTop){
   // Determine the distance from the top of the .header to the top of the page
-  var stickyNavTop = $('.header').offset().top;
+  
     // When the distance from the top of the page to where the user has scrolled is >= the distance from the stickyNavTop
   if( scrollTop >= stickyNavTop ) {
 
@@ -74,12 +75,30 @@ function manageStickyNav(scrollTop){
   // remove player name
 
 
-// When clicking on a li on .team1 or .team2
-  // add css class
-  // add player stats
 
+ var images=['img/nfl players/matt forte.jpeg', 'img/nfl players/andrew luck.jpeg', 'img/nfl players/ben rothlesburger.jpeg', 'img/nfl players/cam newton.jpeg', 'img/nfl players/dez bryant.jpeg', 'img/nfl players/eddie lacy.jpeg', 'img/nfl players/eli manning.jpeg', 'img/nfl players/giants.jpeg', 'img/nfl players/gronk.jpeg', 'img/nfl players/jamaal charles.jpeg', 'img/nfl players/jay cutler.jpeg', 'img/nfl players/jjwatt.jpeg', 'img/nfl players/Larry Fitzgerald.jpeg', 'img/nfl players/marshawn lynch.jpeg', 'img/nfl players/peyton manning.jpeg', 'img/nfl players/ryan tannehill.jpeg'];
+ 
+ var currentPosition = 0;
 
+ // EVENTS ---------
 
+// Listen for click events on the next and previous buttons, nextImage is calling the function
+$('.pictures').on('mouseover', nextImage);
+
+// FUNCTIONS ---------
+
+function nextImage(){
+  // if current position = last image (hint: currentPosition === images.length - 1 )
+  if (currentPosition === images.length - 1) {
+    // set currentPosition to 0
+    currentPosition = 0 
+  } else {
+    // Update the current position
+    currentPosition += 1;
+  }
+  // Update the src attribute to the urls that's stored at the currentPosition in the array
+  $('.pictures').attr('src', images[currentPosition]);
+}
 
 
 
