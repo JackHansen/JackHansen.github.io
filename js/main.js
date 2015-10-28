@@ -9,7 +9,29 @@ $('li a').hover(function () {
   $(this).removeClass('fontsize');
 });
 
+$('.espn').hover(function () {
+  $(this).addClass('colors');
+}, function () {
+  $(this).removeClass('colors');
+});
 
+$('.cbs').hover(function () {
+  $(this).addClass('colors');
+}, function () {
+  $(this).removeClass('colors');
+});
+
+$('.yahoo').hover(function () {
+  $(this).addClass('colors');
+}, function () {
+  $(this).removeClass('colors');
+});
+
+$('.bleacher').hover(function () {
+  $(this).addClass('colors');
+}, function () {
+  $(this).removeClass('colors');
+});
 
 
 // When scrolling down the page
@@ -24,7 +46,6 @@ $(window).on('scroll', (function(){
           // When the distance from the top of the page to where the user has scrolled is >= the distance from the stickyNavTop
         if(playVideo && (scrollTop >= videoCenter)) {
           // rather than just alert simulate a click event on the iframe to trigger the video! \o/
-          $('iframe').on('mouseover', playVideo);
           playVideo = false;
         }
       })()
@@ -33,16 +54,7 @@ $(window).on('scroll', (function(){
 );
 
 
-// When clicking on nav .news
-  // scroll page to class .thenews
-// When clicking on nav .videos
-  // scroll page to .box2
-// When clicking on nav .players
-  // scroll page to class .lists
 
-
-// When scrolling to class .box2
-  // Continuously run video iframe
 var stickyNavTop = $('.header').offset().top;
 
 function manageStickyNav(scrollTop){
