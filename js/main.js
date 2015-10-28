@@ -88,7 +88,7 @@ function manageStickyNav(scrollTop){
 
 
 
- var images=['img/nfl players/matt forte.jpeg', 'img/nfl players/andrew luck.jpeg', 'img/nfl players/ben rothlesburger.jpeg', 'img/nfl players/cam newton.jpeg', 'img/nfl players/dez bryant.jpeg', 'img/nfl players/eddie lacy.jpeg', 'img/nfl players/eli manning.jpeg', 'img/nfl players/giants.jpeg', 'img/nfl players/gronk.jpeg', 'img/nfl players/jamaal charles.jpeg', 'img/nfl players/jay cutler.jpeg', 'img/nfl players/jjwatt.jpeg', 'img/nfl players/Larry Fitzgerald.jpeg', 'img/nfl players/marshawn lynch.jpeg','img/nfl players/.jpg', 'img/nfl players/peyton manning.jpeg', 'img/nfl players/ryan tannehill.jpeg', ];
+ var images=['img/nfl players/matt forte.jpeg', 'img/nfl players/andrew luck.jpeg', 'img/nfl players/ben rothlesburger.jpeg', 'img/nfl players/cam newton.jpeg', 'img/nfl players/dez bryant.jpeg', 'img/nfl players/eddie lacy.jpeg', 'img/nfl players/eli manning.jpeg', 'img/nfl players/giants.jpeg', 'img/nfl players/gronk.jpeg', 'img/nfl players/jamaal charles.jpeg', 'img/nfl players/jay cutler.jpeg', 'img/nfl players/jjwatt.jpeg', 'img/nfl players/Larry Fitzgerald.jpeg', 'img/nfl players/marshawn lynch.jpeg','img/nfl players/odell.jpg', 'img/nfl players/peyton manning.jpeg', 'img/nfl players/ryan tannehill.jpeg', ];
  
  var currentPosition = 0;
 
