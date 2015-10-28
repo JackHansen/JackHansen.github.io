@@ -46,6 +46,9 @@ $(window).on('scroll', (function(){
           // When the distance from the top of the page to where the user has scrolled is >= the distance from the stickyNavTop
         if(playVideo && (scrollTop >= videoCenter)) {
           // rather than just alert simulate a click event on the iframe to trigger the video! \o/
+          $('iframe').on('scroll', function () {
+            $('iframe').playVideo();
+          })
           playVideo = false;
         }
       })()
