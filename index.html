@@ -14,15 +14,21 @@
     <link rel="stylesheet" href="css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700|Oswald|Francois+One' rel='stylesheet' type='text/css'>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128871815-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+   <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-128871815-1', 'auto');
 
-    gtag('config', 'UA-128871815-1');
+// Replace the following lines with the plugins you want to use.
+    ga('require', 'eventTracker');
+    ga('require', 'outboundLinkTracker');
+    ga('require', 'urlChangeTracker');
+    ga('require', 'pageVisibilityTracker')
+// ...
+
+    ga('send', 'pageview');
     </script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+<script async src="JackHansenSite/js/autotrack.js"></script>
 
 </head>
 <body>
